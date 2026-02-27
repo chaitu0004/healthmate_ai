@@ -1,9 +1,7 @@
+import streamlit as st
 import sqlite3
 import hashlib
-import streamlit as st
 import os
-
-
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
@@ -174,15 +172,9 @@ def generate_response(query, context_chunks, history):
 
 init_db()
 
-import streamlit as st
-import sqlite3
-import hashlib
-import os
-from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_core.messages import SystemMessage, HumanMessage
 
-# =============================
+
+
 # CONFIG
 # =============================
 st.set_page_config(
