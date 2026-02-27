@@ -2,7 +2,7 @@ import sqlite3
 import hashlib
 import streamlit as st
 import os
-from dotenv import load_dotenv
+
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -13,7 +13,7 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 # =====================================================
 # LOAD ENV + LLM
 # =====================================================
-load_dotenv()
+
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
@@ -483,4 +483,3 @@ if st.session_state.logged_in and st.session_state.page == "report":
             )
 
             st.rerun()
-            
