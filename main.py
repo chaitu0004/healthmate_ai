@@ -2,7 +2,7 @@ import streamlit as st
 import sqlite3
 import hashlib
 import os
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain-google-genai import ChatGoogleGenerativeAI
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import SentenceTransformerEmbeddings
